@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 932201331828977897}
   - component: {fileID: 932201331828977896}
   - component: {fileID: 1466056877}
+  - component: {fileID: 1307978483}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -73,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 3464079425023365747, guid: 0352ef6dc9dc63141ac6dca95a4fae00,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -167,3 +168,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5786102, y: 0.2421956}
   m_EdgeRadius: 0
+--- !u!114 &1307978483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932201331828977909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98f23c89a7df53941bcb092c9cd12a54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFull: 00
+  slots:
+  - {fileID: 0}
