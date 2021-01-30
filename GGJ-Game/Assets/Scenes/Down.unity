@@ -197,6 +197,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 932201331828977897, guid: db940cc11094c2444a57dd908038ef78,
+        type: 3}
+      propertyPath: startingPosition
+      value: 
+      objectReference: {fileID: 11400000, guid: c05363737f081a24e923f6dfa9c7a864,
+        type: 2}
     - target: {fileID: 932201331828977909, guid: db940cc11094c2444a57dd908038ef78,
         type: 3}
       propertyPath: m_Name
@@ -210,12 +216,12 @@ PrefabInstance:
     - target: {fileID: 932201331828977910, guid: db940cc11094c2444a57dd908038ef78,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.007434666
+      value: -0.007534666
       objectReference: {fileID: 0}
     - target: {fileID: 932201331828977910, guid: db940cc11094c2444a57dd908038ef78,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.6116095
+      value: 3.65
       objectReference: {fileID: 0}
     - target: {fileID: 932201331828977910, guid: db940cc11094c2444a57dd908038ef78,
         type: 3}
@@ -2614,6 +2620,22 @@ PrefabInstance:
         type: 3}
       propertyPath: sceneToLoad
       value: Start
+      objectReference: {fileID: 0}
+    - target: {fileID: 6435808267161443847, guid: 63365e63ab8d4c14d8fe76bad7b5c1a8,
+        type: 3}
+      propertyPath: playerStorage
+      value: 
+      objectReference: {fileID: 11400000, guid: c05363737f081a24e923f6dfa9c7a864,
+        type: 2}
+    - target: {fileID: 6435808267161443847, guid: 63365e63ab8d4c14d8fe76bad7b5c1a8,
+        type: 3}
+      propertyPath: playerPosition.x
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6435808267161443847, guid: 63365e63ab8d4c14d8fe76bad7b5c1a8,
+        type: 3}
+      propertyPath: playerPosition.y
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8570825959716105910, guid: 63365e63ab8d4c14d8fe76bad7b5c1a8,
         type: 3}
