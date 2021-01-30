@@ -6,6 +6,7 @@ public class Sign : MonoBehaviour
 {
 
     public GameObject dialogeBox;
+    public GameObject InventoryFrame;
     public Text dialogText;
     public string dialog;
     public bool playerInRange;
@@ -21,8 +22,10 @@ public class Sign : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space) && playerInRange) {
             if(dialogeBox.activeInHierarchy) {
+              InventoryFrame.SetActive(true);
               dialogeBox.SetActive(false);
             } else {
+              InventoryFrame.SetActive(false);
               dialogeBox.SetActive(true);
               dialogText.text = dialog;
             }
@@ -38,6 +41,7 @@ public class Sign : MonoBehaviour
     private void OnTriggerExit2D(Collider2D other) {
       if(other.CompareTag("Player")) {
         playerInRange = false;
+        InventoryFrame.SetActive(true);
         dialogeBox.SetActive(false);
       }
     }
