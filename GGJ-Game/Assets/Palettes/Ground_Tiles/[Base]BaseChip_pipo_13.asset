@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: '[Base]BaseChip_pipo_13'
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 348675669127100063, guid: 9b702086688f3ec4e9754bef90980665, type: 3}
+  m_Sprite: {fileID: 348675669127100063, guid: 3b62c383eaeaeef4abb4d8750ad42c36, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
