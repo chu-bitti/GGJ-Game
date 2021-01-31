@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 1440106332003402791}
   - component: {fileID: 1440106332003402790}
   - component: {fileID: 1440106332003402789}
+  - component: {fileID: -3921532747459211377}
+  - component: {fileID: 987960271}
   m_Layer: 0
   m_Name: DOGGE
   m_TagString: Untagged
@@ -69,8 +71,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2065770607
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: -1877540365858684945, guid: 280a4d76ddc2ea640ad7665d6f421b9b,
     type: 3}
@@ -129,3 +131,37 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!58 &-3921532747459211377
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1440106332003402785}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.16, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.89
+--- !u!114 &987960271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1440106332003402785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ba9d1f96116e414297503f4da9dbc4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  context: {fileID: 11400000, guid: 22bf3d12a05d446479770af07481dc5a, type: 2}
+  playerInRange: 0
+  dialogeBox: {fileID: 0}
+  dialoge: {fileID: 0}
+  dialog: borf
+  profile: {fileID: 0}
