@@ -18,12 +18,5 @@ public class Candle : PowerUp
 
     }
 
-    public void OnTriggerEnter2D(Collider2D other) {
-      if(other.CompareTag("Player") && !other.isTrigger)
-      {
-        playerInventory.candles += 1;
-        powerupSignals.Raise();
-        Destroy(this.gameObject);
-      }
-    }
+    
 }
