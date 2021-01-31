@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 6384722867667991652}
   - component: {fileID: 6384722867667991651}
   - component: {fileID: 6384722867667991654}
+  - component: {fileID: 889440442}
+  - component: {fileID: 889440441}
   m_Layer: 0
   m_Name: BUNBUN
   m_TagString: Untagged
@@ -26,7 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6384722867667991650}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 8.96, y: 2.69, z: 0}
   m_LocalScale: {x: 0.53757, y: 0.53757, z: 0.53757}
   m_Children: []
@@ -129,3 +131,37 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!58 &889440442
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6384722867667991650}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.15
+--- !u!114 &889440441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6384722867667991650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a5e5217bdd987f4c89000b6e26f0214, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  context: {fileID: 11400000, guid: 22bf3d12a05d446479770af07481dc5a, type: 2}
+  playerInRange: 0
+  dialogeBox: {fileID: 0}
+  dialoge: {fileID: 0}
+  dialog: death
+  profile: {fileID: 0}
