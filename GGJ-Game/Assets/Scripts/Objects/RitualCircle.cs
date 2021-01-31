@@ -7,14 +7,19 @@ using TMPro;
 public class RitualCircle : Interactable
 {
     public Item take;
+    public Item give;
+    public Quest quest;
     public int numberCandles;
     public bool isComplete;
     public bool AllCandlesLit;
     public GameObject dialogeBox;
     public Text dialogText;
     public TextMeshProUGUI candleDisplay;
+    public TextMeshProUGUI dollDisplay;
     public GameObject candleInfo;
+    public GameObject dollInfo;
     public Inventory playerInventory;
+    public QuestManager playerQuestmanager;
     public GameObject LitCandles0;
     public GameObject LitCandles1;
     public GameObject LitCandles2;
@@ -69,7 +74,11 @@ public class RitualCircle : Interactable
       if (numberCandles == 4) {
           AllCandlesLit = true;
           dialogeBox.SetActive(true);
-          dialogText.text = "The ritual is complete.";
+          playerQuestmanager.AddInteraction(quest);
+          playerInventory.AddItem(give);
+          dollDisplay.text = "" + playerInventory.dolls;
+          dollInfo.SetActive(true);
+          dialogText.text = "The ritual is complete. I have the doll.";
           isComplete = true;
         }
     }

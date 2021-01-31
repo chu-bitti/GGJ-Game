@@ -41,7 +41,7 @@ public class Inventory : ScriptableObject {
         } // Is the item a doll?
         if(itemToTake.isDoll)
         {
-          if(candles >= 1) {
+          if(dolls >= 1) {
             dolls--;
           }
         }

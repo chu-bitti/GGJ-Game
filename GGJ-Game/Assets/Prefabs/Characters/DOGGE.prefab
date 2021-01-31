@@ -161,7 +161,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   context: {fileID: 11400000, guid: 22bf3d12a05d446479770af07481dc5a, type: 2}
   playerInRange: 0
+  take: {fileID: 0}
+  quest: {fileID: 0}
   dialogeBox: {fileID: 0}
   dialoge: {fileID: 0}
   dialog: borf
   profile: {fileID: 0}
+  playerQuestmanager: {fileID: 0}
+  playerInventory: {fileID: 0}
+  dollInfo: {fileID: 0}
+  dollDisplay: {fileID: 0}

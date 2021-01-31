@@ -2,32 +2,51 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class DOGGEdialog : Interactable
 {
-    public GameObject dialogeBox;
-    public Text dialoge;
-    public string dialog;
-    public Image profile;
+    public Item take;
+    public Quest quest;
+    public QuestManager playerQuestmanager;
+    public Inventory playerInventory;
+    public GameObject dollInfo;
+    public TextMeshProUGUI dollDisplay;
+    public GameObject dialog;
+    public Conversation conversation;
 
     // Start is called before the first frame update
     void Start()
     {
-
     }
 
     // Update is called once per frame
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Return) && playerInRange) {
-            if(dialogeBox.activeInHierarchy) {
-              dialogeBox.SetActive(false);
+            if(dialog.activeInHierarchy) {
+              dialog.SetActive(false);
             } else {
-              dialogeBox.SetActive(true);
-              dialoge.text = dialog;
+              if (playerQuestmanager.candleRitual == 0) {
+                
             }
+              if (playerQuestmanager.candleRitual == 1) {
+              if (playerInventory.dolls == 0) {
+
+          } else {
+
+              playerInventory.TakeItem(take);
+              dollDisplay.text = "" + playerInventory.dolls;
+              if (playerInventory.dolls == 0) {
+                dollInfo.SetActive(false);
+              }
+            playerQuestmanager.AddInteraction(quest);
+            }
+          }
         }
+      }
     }
+
 
     private void OnTriggerExit2D(Collider2D other)
     {
@@ -35,7 +54,6 @@ public class DOGGEdialog : Interactable
         {
           context.Raise();
           playerInRange = false;
-          dialogeBox.SetActive(false);
         }
     }
   }
