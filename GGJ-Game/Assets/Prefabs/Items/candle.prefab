@@ -126,3 +126,4 @@ MonoBehaviour:
   playerInRange: 0
   playerInventory: {fileID: 11400000, guid: 6805d915dee30414399ba6495ed33f25, type: 2}
   candleDisplay: {fileID: 0}
+  candleInfo: {fileID: 0}

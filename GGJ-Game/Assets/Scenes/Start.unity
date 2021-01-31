@@ -24668,7 +24668,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1219652617
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24742,7 +24742,8 @@ MonoBehaviour:
   context: {fileID: 0}
   playerInRange: 0
   playerInventory: {fileID: 11400000, guid: 6805d915dee30414399ba6495ed33f25, type: 2}
-  candleDisplay: {fileID: 0}
+  candleDisplay: {fileID: 1994519422}
+  candleInfo: {fileID: 1219652616}
 --- !u!114 &1219652621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24760,7 +24761,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1219652620}
-        m_MethodName: UpdateCandleCount
+        m_MethodName: UpdateCandleCounter
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -33193,7 +33194,7 @@ Transform:
   m_Children:
   - {fileID: 369444519}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1867850995
 GameObject:
@@ -33816,7 +33817,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2137476455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33915,7 +33916,7 @@ PrefabInstance:
     - target: {fileID: 932201331828977910, guid: db940cc11094c2444a57dd908038ef78,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 932201331828977910, guid: db940cc11094c2444a57dd908038ef78,
         type: 3}

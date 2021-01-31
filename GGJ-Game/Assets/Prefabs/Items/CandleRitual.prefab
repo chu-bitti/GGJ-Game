@@ -269,7 +269,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 476614662615978840}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.94, y: 5.85, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -483,6 +483,8 @@ MonoBehaviour:
   AllCandlesLit: 0
   dialogeBox: {fileID: 0}
   dialogText: {fileID: 0}
+  candleDisplay: {fileID: 0}
+  candleInfo: {fileID: 0}
   playerInventory: {fileID: 11400000, guid: 6805d915dee30414399ba6495ed33f25, type: 2}
   LitCandles0: {fileID: 476614662486735805}
   LitCandles1: {fileID: 476614663228718153}

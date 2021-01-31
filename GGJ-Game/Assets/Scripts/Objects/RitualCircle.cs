@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class RitualCircle : Interactable
 {
@@ -11,6 +12,8 @@ public class RitualCircle : Interactable
     public bool AllCandlesLit;
     public GameObject dialogeBox;
     public Text dialogText;
+    public TextMeshProUGUI candleDisplay;
+    public GameObject candleInfo;
     public Inventory playerInventory;
     public GameObject LitCandles0;
     public GameObject LitCandles1;
@@ -33,6 +36,10 @@ public class RitualCircle : Interactable
               if(playerInventory.candles > 0) {
               if(AllCandlesLit == false) {
               playerInventory.TakeItem(take);
+              candleDisplay.text = "" + playerInventory.candles;
+              if (playerInventory.candles == 0) {
+                candleInfo.SetActive(false);
+              }
               ActivateCandle();
               numberCandles++;
               CompleteRitual(); }
