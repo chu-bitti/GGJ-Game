@@ -18,7 +18,7 @@ public class MainMenuScript : MonoBehaviour
     }
 
     public void NewGame() {
-      SceneManager.LoadScene("Start");
+      SceneManager.LoadScene("OpeningCutscene");
     }
 
     public void QuittoDesktop() {
